@@ -99,6 +99,7 @@
 .fest{
     height:300px;
     width:200px;
+    border-radius: 5px;
 }
 .fest:hover{
     background-color: #f0f8ff;
@@ -116,15 +117,36 @@
     height: 300px;
     width: 1000px;
     margin-left: 10px;
-    display: flex;
     justify-content: space-between;
+    display: flex;
     flex-wrap: wrap;
+    gap: 10px; 
    
 }
 .locate {
-    height: 30px;
-    width:100px;
-    background-color: aqua;
+    height: 60px;
+    width:10px;
+    background-color: #fff;
     text-decoration: none;
     color: #fff;
+    flex: 1 1 calc(33.33% - 10px); 
+    box-sizing: border-box; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+.fest h6{
+    color: #fff;
+    margin-top: 260px;
+    font-weight: bolder;
+    margin-left: 2px;
+}
+.locate:hover{
+    background-color: #f0f8ff4a;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.0); 
+}
+.locate h5{
+    color:#000;
+    font-weight: lighter;
 }
